@@ -225,8 +225,19 @@ nav>ul>li~li::before {
 }
 
 .content01 img {
-    width: 100%;
+    overflow: hidden;
     transition: 0.5s;
+}
+
+.content01 .case {
+    overflow: hidden;
+    border-radius: 47% 53% 50% 50% / 51% 56% 44% 49%;
+    transition: 0.5s 0.5s;
+    margin: 0 0 30px 0;
+}
+
+.content01:hover .case {
+    border-radius: 10px;
 }
 
 .content01 img:hover {
@@ -234,18 +245,23 @@ nav>ul>li~li::before {
 }
 
 .content01 h2 {
-    display: block;
+
     letter-spacing: 0.5em;
-    font-size: 20px;
-    font-weight: 100;
-    margin-bottom: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
 }
 
 .content01 p {
     display: block;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
+}
+
+.content01 strong {
+    margin: 0 0 20px;
+    display: block;
 }
 
 .content01 .container {
@@ -254,10 +270,6 @@ nav>ul>li~li::before {
     margin: 0 auto;
 }
 
-.content01 strong {
-    margin: 0 0 20px;
-    display: block;
-}
 
 .content01 .container figure {
     display: block;
@@ -272,9 +284,9 @@ nav>ul>li~li::before {
 
 .content01 .container figure a {
     display: inline-block;
-    border: 1px solid #666;
-    line-height: 30px;
-    padding: 0 30px;
+    padding: 5px 20px 10px 20px;
+    background: #333;
+    color: #fff;
 }
 
 .content01 .container figure a {
@@ -282,25 +294,29 @@ nav>ul>li~li::before {
 }
 
 .index_bg {
-    background: url(../img/mainvisual03.jpg) no-repeat center center/cover;
+    background: url(../img/mainvisual03.jpg) no-repeat fixed center center/cover;
     filter: grayscale(1);
     padding: 100px 0;
     text-align: center;
-    color: #f2f2f2;
-    background-attachment: fixed;
+    color: #fff;
+    /* background-attachment: fixed; */
 }
 
 .index_bg {
     display: block;
 }
 
-.index_bg h2 {
+section h2 {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.index_bg p {
+.index_bg a {
+    vertical-align: middle;
+}
+
+section p {
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 20px;
@@ -308,8 +324,10 @@ nav>ul>li~li::before {
 
 .index_bg i {
     padding: 10px;
-    background: #000;
+    background: #333;
+    margin: 5px 0 0 20px;
     border-radius: 50%;
+    vertical-align: middle;
 }
 
 .movie01 {
@@ -317,6 +335,7 @@ nav>ul>li~li::before {
 }
 
 .movie01 .container {
+    gap: 50px;
     display: flex;
     width: 1200px;
     margin: 0 auto;
@@ -327,12 +346,17 @@ nav>ul>li~li::before {
     padding: 0 15px;
 }
 
+.movie01 .container figure {
+    flex: 1;
+}
+
 .movie01 video {
-    width: 100%;
+    max-width: 100%;
 }
 
 .movie01 .txt {
-    padding: 50px 15px;
+    flex: 1;
+    padding: 100px 0;
 }
 
 .movie01 .txt h2 {
@@ -346,14 +370,81 @@ nav>ul>li~li::before {
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 30px;
-}              
+}
 
-.movie01 i {
-    font-size: 30px;
+.movie01 .txt i {
+    margin: 0 5px 0 0;
     color: #fff;
     background: #333;
     padding: 10px;
     border-radius: 50%;
-    margin-right: 20px;
 }
 
+.utube {
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    filter: grayscale(1);
+}
+
+.utube i {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px 2px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.product {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.product .container {
+    display: block;
+}
+
+.product figure {
+    padding: 0 15px;
+}
+
+.product .slick-dots {
+    margin: 30px 0 0 0;
+}
+.product .slick-dots>li {
+    display: inline-block;
+    background: #f00;
+    padding: 4px;
+    margin: 0 3px;
+    border-radius: 50%;
+}
+
+.product .slick-dots .slick-active {
+    background: #333;
+}
+
+.product .slick-dots button {
+    display: none;
+}
+
+.product i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.product i.xi-arrow-left {
+    margin: 0 0 0 -700px;
+}
+
+.product i.xi-arrow-right {
+    margin: 0 0 0 700px;
+}

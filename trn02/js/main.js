@@ -27,6 +27,46 @@ $(function () {
         $(".movie01 video").trigger("pause");
     });
 
+    // $('.movie01 .txt i:nth-of-type(1)').on('click', function() {
+    //        $('.movie video').trigger('play');
+    // })
+    // $('.movie01 .txt i:nth-of-type(2)').on('click', function() {
+    //        $('.movie video').trigger('pause');
+    // })
+
+    $('#myMovie').YTPlayer({
+        videoURL: 'http://youtu.be/BsekcY04xvQ',
+        containment: '.utube',
+        autoPlay: true,
+        mute: true,
+        startAt: 0,
+        opacity: 1,
+        showcontrols: false,
+        playOnlyIfVisible: true,
+
+    });
+
+    $('.utube i:nth-of-type(1)').on('click', function () {
+        $('#myMovie').YTPPlay();
+    });
+    $('.utube i:nth-of-type(2)').on('click', function () {
+        $('#myMovie').YTPPause();
+    });
+
+    $('.product .container').slick({
+        arrows: false,
+        slidesToShow: 5,
+        dots: true,
+    })
+
+    $('.product i.xi-arrow-left').on('click', function () {
+        $('.product .container').slick('slickNext')
+    });
+    $('.product i.xi-arrow-right').on('click', function () {
+        $('.product .container').slick('slickPrev')
+    });
+
+
 
 
 
