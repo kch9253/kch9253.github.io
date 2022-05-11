@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+    .container figure {
+        flex: 1;
+    }
+
+    .container figure img {
+        width: 100%;
+    }
+
+
+    .main_link {
+        padding: 0 0 100px 0;
+        background: linear-gradient(to top, #f7f7f7 70%, transparent 30%);
+    }
+
+
+    .main_link h2 {
+        text-align: center;
+        margin: 0 0 50px 0;
+    }
+
+    .main_link h2::before {
+        content: "";
+        display: inline-block;
+        width: 80px;
+        height: 1px;
+        background: #f00;
+        vertical-align: middle;
+        margin: 0 10px;
+    }
+
+    .main_link h2::after {
+        content: "";
+        display: inline-block;
+        width: 80px;
+        height: 1px;
+        background: #f00;
+        vertical-align: middle;
+        margin: 0 10px;
+    }
+
+    .main_link .container {
+        gap: 30px;
+    }
+
+    .main_link figure {
+        position: relative;
+        flex: 1;
+        border-radius: 50px 0 0 0;
+        overflow: hidden;
+    }
+
+    .main_link img {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .main_link h3 {
+        font-size: 23px;
+        margin: 0 0 30px 0;
+    }
+
+    .main_link h3::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 1px;
+        background: #f00;
+        margin: 15px 0;
+    }
+
+    .main_link figure a {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background: rgba(243, 202, 79, 0.5);
+        text-align: center;
+        line-height: 60px;
+        color: #fff;
+        border-radius: 50%;
+        text-transform: uppercase;
+
+
+    }
+
+    .main_link figure a:hover {
+        background: rgba(243, 202, 79, 1);
+        border-radius: 5px;
+    }
+
+    .footer {
+        border-top: 1px solid #ddd;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .footer ul {
+        margin: 10px 0;
+
+    }
+
+    .footer ul>li {
+        display: inline-block;
+    }
+
+    .footer ul>li~li::before {
+        content: "";
+        display: inline-block;
+        width: 1px;
+        height: 13px;
+        background: #333;
+        margin: 0 15px;
+        vertical-align: middle;
+
+    }
+
+    .footer address {
+        font-style: normal;
+    }
+</style>
+
+<body>
+    <section class="main_link">
+
+        <div class="container">
+            <figure>
+                <img src="./trn01/img/main_s011.jpg" alt="">
+                <h3>아파트입주청소</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Ea nobis dolores voluptate
+                    cumque. Tempora at, animi illo maiores earum vero.</p>
+                <a href="#!">MORE</a>
+            </figure>
+            <figure>
+                <img src="./trn01/img/main_s012.jpg" alt="">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Ea nobis dolores voluptate
+                    cumque. Tempora at, animi illo maiores earum vero.</p>
+                <a href="#!">MORE</a>
+            </figure>
+            <figure>
+                <img src="./trn01/img/main_s013.jpg" alt="">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Ea nobis dolores voluptate
+                    cumque. Tempora at, animi illo maiores earum vero.</p>
+                <a href="#!">MORE</a>
+            </figure>
+
+        </div>
+    </section>
+
+    </main>
+    <footer class="footer">
+        <div>
+            부산광역시 북구 만덕2로 14 상가동&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;제314호</div>
+        <ul>
+            <li>대표자 : 전정선&amp;김창희</li>
+            <li>사업자등록번호 : 606-11-45081</li>
+            <li>Tel : 051-331-3354 <a href="051-331-3354"></a></li>
+            <li> e-mail : jjs3354@naver.com <a href="jjs3354@naver.com"></a></li>
+        </ul>
+
+
+        <address>&copy; © 부산아파트입주청소 깔끔이청소 All Rights Reserved.</address>
+    </footer>
+    </div>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
