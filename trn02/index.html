@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/mbtn.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -42,6 +43,13 @@
                             <li><a href="">특별한 솔리테어</a></li>
                         </ul>
                     </nav>
+
+                    <button class="hamburger mbtn hamburger--collapse" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+
                     <form action="javascript:formSubmit()" id="searchForm">
                         <input type="text">
                         <button>
@@ -50,7 +58,6 @@
                         <script>
                             function formSubmit() {
                                 let inVar = document.querySelector('#searchForm input');
-                                .value;
                                 console.log(inVar);
                                 if (inVar.value.length < 8) {
                                     alert('말이 짧다.');
@@ -67,7 +74,7 @@
         </header>
         <main>
             <section class="main_visual">
-                <div class="main_slide">
+                <div class="main_slider">
                     <figure class="itm01">
                         <div class="container">
                             <h3>01 JEWELLERY COLLECTION EVENT</h3>
@@ -93,50 +100,48 @@
                 </div>
             </section>
 
-            <section class="content01">
+            <section class="basic">
                 <h2>JEWELLERY COLLECTION</h2>
                 <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷</p>
                 <div class="container">
                     <figure>
-                        <div class="case">
+                        <div class="inbox">
                             <img src="./img/lesedilarona01.jpg" alt="">
                         </div>
                         <strong>스톤 그리고 색상들을 멋진 조합</strong>
-                        <a href="#">구매하기</a>
+                        <a href="#">more</a>
                     </figure>
                     <figure>
-                        <div class="case">
+                        <div class="inbox">
                             <img src="./img/lesedilarona02.jpg" alt="">
                         </div>
                         <strong>스톤 그리고 색상들을 멋진 조합</strong>
-                        <a href="#">구매하기</a>
+                        <a href="#">more</a>
                     </figure>
                     <figure>
-                        <div class="case">
+                        <div class="inbox">
                             <img src="./img/lesedilarona03.jpg" alt="">
                         </div>
                         <strong>스톤 그리고 색상들을 멋진 조합</strong>
-                        <a href="#">구매하기</a>
+                        <a href="#">more</a>
                     </figure>
 
                 </div>
             </section>
 
-            <section class="index_bg">
+            <section class="fixed_bg">
                 <h2>JEWELLERY COLLECTION</h2>
                 <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷</p>
-                <a href="#">more </a>
+                <span>more</span>
                 <i class="xi-arrow-right"></i>
-
-
             </section>
 
-            <section class="movie01">
+            <section class="movie">
                 <div class="container">
                     <figure>
-                        <video src="./img/movie.mp4" muted autoplay loop></video>
+                        <video src="./img/movie.mp4" muted autoplay loop playsinline></video>
                     </figure>
-                    <div class="txt aos-init aos-animate">
+                    <div class="dec">
                         <h2>JEWELLERY COLLECTION</h2>
                         <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷
                             표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷
@@ -157,7 +162,7 @@
 
             </section>
             <!-- <section class="product"> -->
-                <!-- <h2>JEWELLERY COLLECTION</h2>
+            <!-- <h2>JEWELLERY COLLECTION</h2>
                 <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷</p>
 
                 <div class="container">
@@ -194,55 +199,53 @@
 
             <section class="product_list">
                 <h2>JEWELLERY COLLECTION</h2>
-                
-                        <!-- /* 라벨생성 */ -->
-                    <!-- <small><span>NEW</span></small>  -->
-                    <!-- /* 라벨생성 */ -->
+
+                <!-- /* 라벨생성 */ -->
+                <small><span>NEW</span></small>
+                <!-- /* 라벨생성 */ -->
                 </h2>
                 <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷
                     표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷 </p>
-                        <div class="product_slider">
-                            <figure>
-                                <div class="box">
-                                    <img src="./img/lesedilarona01.jpg" alt="">
-                                </div>
-                                <strong>JEWELLERY</strong>
-                            </figure>
-                            <figure>
-                                <div class="box">
-                                    <img src="./img/lesedilarona02.jpg" alt="">
-                                </div>
-                                <strong>JEWELLERY</strong>
-                            </figure>
-                            <figure>
-                                <div class="box">
-                                    <img src="./img/lesedilarona03.jpg" alt="">
-                                </div>
-                                <strong>JEWELLERY</strong>
-                            </figure>
-                            <figure>
-                                <div class="box">
-                                    <img src="./img/lesedilarona04.jpg" alt="">
-                                </div>
-                                <strong>JEWELLERY</strong>
-                            </figure>
-                            <figure>
-                                <div class="box">
-                                    <img src="./img/lesedilarona05.jpg" alt="">
-                                </div>
-                                <strong>JEWELLERY</strong>
-                            </figure>
-                            <figure>
-                                <div class="box">
-                                    <img src="./img/lesedilarona06.jpg" alt="">
-                                </div>
-                                <strong>JEWELLERY</strong>
-                            </figure>
+                <div class="product_slider">
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona01.jpg" alt="">
                         </div>
-                    
-                    <i class="xi-arrow-left s_left"></i>
-                    <i class="xi-arrow-right s_right"></i>
-
+                        <strong>JEWELLERY</strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona02.jpg" alt="">
+                        </div>
+                        <strong>JEWELLERY</strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona03.jpg" alt="">
+                        </div>
+                        <strong>JEWELLERY</strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona04.jpg" alt="">
+                        </div>
+                        <strong>JEWELLERY</strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona05.jpg" alt="">
+                        </div>
+                        <strong>JEWELLERY</strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona06.jpg" alt="">
+                        </div>
+                        <strong>JEWELLERY</strong>
+                    </figure>
+                </div>
+                <i class="xi-arrow-left s_left"></i>
+                <i class="xi-arrow-right s_right"></i>
             </section>
 
             <section class="tab">
@@ -256,7 +259,9 @@
                         <ul class="tab_content">
                             <li class="on">
                                 <dl>
-                                    <dd><strong>부산 111111111111111111111111111111111111111111111111111111111111</strong><span>2022.12.24</span></dd>
+                                    <dd><strong>부산
+                                            111111111111111111111111111111111111111111111111111111111111</strong><span>2022.12.24</span>
+                                    </dd>
                                     <dd><strong>부산</strong><span>2022.12.24</span></dd>
                                     <dd><strong>부산</strong><span>2022.12.24</span></dd>
                                     <dd><strong>부산</strong><span>2022.12.24</span></dd>
@@ -274,7 +279,7 @@
             </section>
         </main>
         <footer class="footer">
-            
+
             <div class="footer_top container">
                 <ul>
                     <li><a href="">이용약관</a></li>
@@ -285,15 +290,17 @@
                     <li><a href="">그라프 하우스 소개</a></li>
                 </ul>
                 <div class="sns">
-                    <a href=""><i class="xi-kakaotalk"></i></a>
+                    <a href="#!"><i class="xi-kakaotalk"></i></a>
                     <a href=""><i class="xi-facebook"></i></a>
                     <a href=""><i class="xi-naver"></i></a>
                 </div>
             </div>
             <hr>
             <address class="footer_bottom container">
-                <div class="left">전화번호 : <a href="tel:000-0000-0000">010-000-0000</a>
-                    <a href="mail">e-mail : 000000000</a> </div>
+                <div class="left">
+                    전화번호 : <a href="tel:000-0000-0000">010-000-0000</a>&nbsp;&nbsp;&nbsp;
+                    e-mail : <a href="mailto:000000000">000000000</a>&nbsp;&nbsp;&nbsp;
+                </div>
                 <div class="right">
                     <select id="link">
                         <option value="">family link</option>
