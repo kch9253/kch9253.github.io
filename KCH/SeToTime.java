@@ -1,5 +1,3 @@
-// 시간값 구하기 
-
 
 import java.util.Scanner;
 
@@ -10,13 +8,12 @@ public class SeToTime {
 	
 	int second = scanner.nextInt();
 	
-	int hour = second / 3600 ; //시
-	int minute = (second % 3600) / 60; //분
-	int secondCal = second % 60; //초
+	int hour = second / 3600 ;
+	int minute = (second % 3600) / 60;
+	int second;
 	
 	System.out.println(hour + "시간");
 	System.out.println(minute + "분");
-	System.out.println(secondCal + "초");
 	
 	// System.out.println("입력한수: " + second);
 	}

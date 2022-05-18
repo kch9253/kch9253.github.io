@@ -116,7 +116,7 @@ import java.util.Scanner;
 
 /////////// 나눈 몫과 나머지 
 
-public class QQQ {
+/* public class QQQ {
 	public static void main(String[] args) {
 	
 	    Scanner input = new Scanner(System.in);
@@ -133,5 +133,22 @@ public class QQQ {
 		
 	}	
 
-}
+} */
 
+/* public class QQQ {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("정수값 다섯자리를 입력하시오.");
+		int num = input.nextInt();
+		
+		int a = num % 10;
+		int b = (num % 100) / 10;
+		int c = (num % 1000) / 100;
+		int d = (num % 10000) / 1000;
+		int e = num / 10000;
+		
+		
+		System.out.print("정수값" + a + b + c + d + e);
+		
+	}
+} */

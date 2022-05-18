@@ -16,8 +16,10 @@ public class ZZZ {
 		System.out.print("수학점수? ");
 		int C = scan.nextInt(); //수학
 		
-		System.out.println(A + B + C);
-		System.out.println((A + B + C) / 3);
+		int sum = A + B + C;
+		
+		System.out.println("합은: " + sum);
+		System.out.println("평균은: " + avg);
 		
 		
 	}
