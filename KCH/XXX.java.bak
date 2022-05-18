@@ -1,0 +1,25 @@
+// 사용자에게 정수 하나를 입력받아서
+// 제곱 값을 출력하는 프로그램
+
+import java.util.Scanner;
+
+public class XXX {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		int x = 10;
+		int y = 11;
+		int sum;
+		
+		System.out.print ("첫번째 숫자: ");
+		x = input.nextInt();
+		
+		System.out.print ("두번째 숫자: ");
+		y = input.nextInt();
+		
+		sum = x * y ;
+		
+		System.out.println(sum);
+	}
+}
