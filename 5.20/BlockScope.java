@@ -1,0 +1,19 @@
+
+
+//범위표현 {} 없이 사용가능하게 
+// 첫번째 void main {} 큰 박스안에 다른 {}박스를 만들어서 안에 값을 출력해도 가능하다 
+
+public class BlockScope {
+	public static void main (String[] args){
+		int a = 10;      					// int a,b 가 {} 다른범위안에 존재하지만 둘다 출력이 가능하다
+		{									// {} 범위안에서 만들어진 변수는 범위가끝나는 순간 사라진다 
+			int b = 20;
+
+			// int a = 99;	같은 a 값을 넣어줘도 같은 범위 안에 존재하기때문에 중복선언을 할수없다	
+			System.out.println("가능한가?");	// 지역변수 = 범위안에서만 가능한 값 (입력해둔 a,b같은경우 지역변수)
+			System.out.println(a);
+			System.out.println(b);
+		}
+		// System.out.println(b); 			// b 라는 값을 출력못하는이유는 위에 잡아둔 int b 값의 범위를 벗어났기때문
+	}										// 범위를 벗어난 값들은 프로그램 종료시 모두 사라진다
+}

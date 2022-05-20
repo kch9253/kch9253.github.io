@@ -1,0 +1,9 @@
+
+
+//제어문 = 흐름 / 일렬로 잘 흘러가다가 중간에 새로운 흐름을 체크하기위해 ,생성할수있는
+
+public class TestIf{
+	public static void main(String[] args) {
+		
+	}
+}
