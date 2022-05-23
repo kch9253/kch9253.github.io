@@ -1,0 +1,15 @@
+
+
+public class LoopFor2 {
+	public static void main (String[] args){
+		// 10 ~ 99사이의 정수
+		for (int i = 10; i <= 99; i++) 
+		{   int left = i / 10;
+			int right = i % 10;
+			if (left + right == 7) {
+				System.out.println(i);
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+public class SumForUser {
+	public static void main (String[] args){
+		// 사용자가 정수 범위를 지정. (시작-끝 입력)
+		// 해당범위의 정수의 합을 나오게한다
+		// 0~100
+		Scanner scan = new Scanner(System.in);
+		System.out.print("시작? 끝?");
+		int start = scan.nextInt();
+		int end = scan.nextInt();
+		
+		int sum = 0;
+		for (int i = start; i <= end; i++) {
+		
+		sum += i;
+			
+		}
+		System.out.println(sum);
+	}
+}
