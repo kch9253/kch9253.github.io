@@ -1,0 +1,56 @@
+
+<<5월 23일수업>>
+
+정수값은 실수값을 따라간다 ex ) 4.2+1 = 5.2 
+
+String = 문자열 (S대문자필수) / 하나의 클래스개념 
+문자열에서 띄어쓰기 적용할시 "\n" = 쌍따옴표 필수
+
+
+<<문자찾기기능>>
+charAt(값); = String ="문구" / charAt 는 String 안에들어있는 각각의 문자를 찾아주는기능을한다
+ex) String a = "안녕하세요" / char b = a.charAt(0); 값입력하면 '안' 이라는 문자를 찾아준다
+chatAt 는 0123456789 이런식으로 0부터시작하여 문구안의 첫 문자를 0으로 인식하여 순서대로 찾아준다
+0 이아닌 -1 를 입력하여 문자를 찾으려하면 에러가뜬다
+
+
+int 이름 = indexOf 를 통해 String 을 통한 문구값중 "찾을문자"  를 입력하면 찾을수있다
+lastIndexOf = 오른쪽에서부터 찾을수있는 기능
+예) String hello = "hello"; 
+int index = hello.indexOf("o");
+
+
+String 의 값을 비교하고싶을시
+== 참조하고있는 대상이 같은지를 알려준다
+ String a = "hello"';   String llo = "hello"';  이런식으로 값을 지정해둘시 
+★★★ equals ★★★ 값이 입력되지않을시 두개의 값이 거짓으로 나오는경우가있다
+예 ) (a == ("he" + llo)); 이렇게 he+llo 값이 a 와같냐고 물어볼시 거짓이뜬다
+이럴경우 (a.equals("he" + llo)); 이런식으로 값을입력하면 진실로 나온다 
+
+
+valueOf = 문자열 형태로 만들어준다
+예) int a = 12345 이런식으로 입력을했을시 12345의 값을 "12345" 이런식으로 바꿔준다
+
+
+<<int , String 동시활용>>
+int 값과 String 의 문자값을 같이 표기하고싶을시 println 밑에 nextLine 을 통해 한칸띄우고 String 값이 입력되도록 처리한다
+
+
+void main (String[] args) {
+{} = 이안에있는값은 void main 에있는 {} 값을 자유롭게 사용하지못한다.
+}
+
+
+boolean condition = true; 값을 입력해둘시 
+if (condition) {} = 괄호안에 있는 입력값이 정상작동하고 거짓값을 입력해둘시 작동하지않는다
+
+
+if 와 else 값을 사용할시 항상 마지막은 else만 입력한다 
+if else () {} 이런식으로 활용해도되지만 마지막은 항상 else 값만입력한다 
+
+
+
+
+
+
+ 
