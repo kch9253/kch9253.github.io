@@ -17,8 +17,8 @@ public class Print2D {
 		// }
 		
 		// 2. 그다음 세로열의 숫자만 2,3,4로 바꿔주면 되니깐 '아우터 반복문'을 생성해봄
-		for (int j = 1; j <= 4; j++) {
-			for (int i = 1; i <= 4; i++) {
+		for (int j = 1; j <= 4; j++) { // 세로줄 형성
+			for (int i = 1; i <= 4; i++) { // 가로줄 형성
 				System.out.printf("(%d, %d) ", j, i);
 			}
 			System.out.println(); // 이너반복 진행 후 줄바꾸기
