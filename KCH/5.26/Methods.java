@@ -2,7 +2,7 @@ public class Methods {
 	// 숫자 하나가 짝수,홀수인지 알고싶음 이기능을 할수있는 메소드 종류
 	boolean isEven(int)
 	int isEven(int)
-	void isEven(int)
+	void isEven(int) // void 의 return 값은 먹히지않는다
 	char isEven(int)
 	
 	
