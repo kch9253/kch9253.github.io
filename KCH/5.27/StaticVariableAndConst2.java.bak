@@ -1,0 +1,27 @@
+
+
+public class StaticVariableAndConst2 {
+	public static void printTest(int param) {
+		param++; // (final int 를 통해 상수를 선언하면 param++ 를 선언하면 에러가뜬다)
+		System.out.println(param); // ()안의 값이 메인보다 위에있기때문에 출력할수없다
+	}
+	
+	public static void main (String[] args) {
+		int inner = 10;
+		//System.out.println(TEST_SCOPE); 선언을 한후 출력하는 순서이지 출력부터하면 에러뜬다
+		final int TEST_SCOPE = 20;
+		printTest(TEST_SCOPE);
+		System.out.println("메인에서의 상수값: " + TEST_SCOPE);
+		
+		
+		// {
+			// System.out.println(inner);
+			// System.out.println(TEST_SCOPE);
+			
+			// //	final int TEST_SCOPE; 반대로 출력부터 선언하고 int 값을 밑에 표기하면 에러뜬다
+			// final int BLOCK = 100; // 상수도 지역변수라서 선언한 {} 안에 출력을 해야지 범위밖으로 벗어나면 출력할수없다
+								   // // 항상 상수값을 지정하고 선언한 {} 범위안에서만 출력해야한다.
+		// }
+		// System.out.println(BLOCK);
+	}
+}
