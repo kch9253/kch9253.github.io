@@ -1,0 +1,14 @@
+// 전달받은 두문자열의 길이값의 합을 반환하는 메소드
+
+public class StringConcatLenght {
+	public static int getToalLength (String str1 , String str2) {
+		return str1.length() + str2.length(); // length = 길이값구하는
+	}
+	
+	
+	public static void main (String[] args) {
+		int length = getToalLength("abcde", "가나다라");
+		System.out.println(length);
+		
+	}
+}
