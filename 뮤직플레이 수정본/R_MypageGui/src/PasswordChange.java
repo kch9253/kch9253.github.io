@@ -10,6 +10,7 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 
@@ -77,14 +78,14 @@ class PasswordChange extends JDialog implements MouseListener {
 		sl_passwordpnl.putConstraint(SpringLayout.NORTH, btnNewButton_2, 25, SpringLayout.SOUTH, lblNewLabel);
 		passwordpnl.add(lblNewLabel);
 		
-		textField_2 = new JTextField("1번");
+		textField_2 = new JPasswordField(); // 기존비번입력
 		sl_passwordpnl.putConstraint(SpringLayout.SOUTH, lblNewLabel_1, 0, SpringLayout.SOUTH, textField_2);
 		sl_passwordpnl.putConstraint(SpringLayout.NORTH, textField_2, 113, SpringLayout.NORTH, passwordpnl);
 		sl_passwordpnl.putConstraint(SpringLayout.WEST, textField_2, 124, SpringLayout.WEST, passwordpnl);
 		passwordpnl.add(textField_2);
 		textField_2.setColumns(10);
 		
-		textField = new JTextField("2번");
+		textField = new JPasswordField(); // 변경할비번
 		sl_passwordpnl.putConstraint(SpringLayout.EAST, lblNewLabel_2, -6, SpringLayout.WEST, textField);
 		sl_passwordpnl.putConstraint(SpringLayout.NORTH, textField, 162, SpringLayout.NORTH, passwordpnl);
 		sl_passwordpnl.putConstraint(SpringLayout.SOUTH, textField, -205, SpringLayout.SOUTH, passwordpnl);
@@ -95,7 +96,7 @@ class PasswordChange extends JDialog implements MouseListener {
 		passwordpnl.add(textField);
 		textField.setColumns(10);
 		
-		textField_1 = new JTextField("3번");
+		textField_1 = new JPasswordField(); // 변경할비번 재입력
 		sl_passwordpnl.putConstraint(SpringLayout.NORTH, textField_1, 25, SpringLayout.SOUTH, textField);
 		sl_passwordpnl.putConstraint(SpringLayout.SOUTH, textField_1, -25, SpringLayout.NORTH, btnNewButton_2);
 		sl_passwordpnl.putConstraint(SpringLayout.EAST, lblNewLabel, -6, SpringLayout.WEST, textField_1);

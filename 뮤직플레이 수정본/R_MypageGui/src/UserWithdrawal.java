@@ -10,6 +10,7 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 
@@ -37,7 +38,7 @@ class UserWithdrawal extends JDialog implements MouseListener {
 		SpringLayout sl_unsubscribe = new SpringLayout();
 		unsubscribe.setLayout(sl_unsubscribe);
 		
-		textField_1 = new JTextField("1번");
+		textField_1 = new JPasswordField(); // 비번입력
 		sl_unsubscribe.putConstraint(SpringLayout.NORTH, textField_1, 130, SpringLayout.NORTH, unsubscribe);
 		sl_unsubscribe.putConstraint(SpringLayout.EAST, textField_1, -102, SpringLayout.EAST, unsubscribe);
 		unsubscribe.add(textField_1);
@@ -79,7 +80,7 @@ class UserWithdrawal extends JDialog implements MouseListener {
 		btnNewButton_1.setContentAreaFilled(false); // 버튼 투명하게설정
 		btnNewButton_1.setFocusPainted(false);
 		
-		textField = new JTextField("2번");
+		textField = new JPasswordField(); // 비번재입력
 		sl_unsubscribe.putConstraint(SpringLayout.NORTH, btnNewButton, 41, SpringLayout.SOUTH, textField);
 		sl_unsubscribe.putConstraint(SpringLayout.NORTH, lblNewLabel_1, 0, SpringLayout.NORTH, textField);
 		sl_unsubscribe.putConstraint(SpringLayout.SOUTH, lblNewLabel_1, 0, SpringLayout.SOUTH, textField);
