@@ -65,7 +65,7 @@ public class Login extends JFrame implements MouseListener {
         background.add(textField);
         textField.setColumns(10);
         
-        textField_1 = new JTextField("1번");
+        textField_1 = new JTextField(); // 아이디 입력란 텍스트필드
         sl_background.putConstraint(SpringLayout.NORTH, textField_1, 189, SpringLayout.NORTH, background);
         sl_background.putConstraint(SpringLayout.WEST, textField_1, 98, SpringLayout.WEST, background);
         sl_background.putConstraint(SpringLayout.EAST, textField_1, -106, SpringLayout.EAST, background);

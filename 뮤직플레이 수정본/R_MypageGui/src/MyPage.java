@@ -79,7 +79,7 @@ public class MyPage extends JFrame implements MouseListener {
 		sl_pnl.putConstraint(SpringLayout.NORTH, lblNewLabel_1, 174, SpringLayout.NORTH, pnl);
 		pnl.add(lblNewLabel_1);
 		
-		textField = new JTextField("1번");
+		textField = new JTextField(); // 이름뜨게하면됨 라벨로
 		sl_pnl.putConstraint(SpringLayout.EAST, lblNewLabel, -6, SpringLayout.WEST, textField);
 		sl_pnl.putConstraint(SpringLayout.SOUTH, textField, 6, SpringLayout.SOUTH, lblNewLabel);
 		sl_pnl.putConstraint(SpringLayout.NORTH, textField, 114, SpringLayout.NORTH, pnl);
@@ -88,7 +88,7 @@ public class MyPage extends JFrame implements MouseListener {
 		pnl.add(textField);
 		textField.setColumns(10);
 		
-		textField_1 = new JTextField("2번");
+		textField_1 = new JTextField(); // 아이디 뜨게하면됨 라벨로
 		sl_pnl.putConstraint(SpringLayout.NORTH, btnNewButton_1, 24, SpringLayout.SOUTH, textField_1);
 		sl_pnl.putConstraint(SpringLayout.EAST, lblNewLabel_1, -6, SpringLayout.WEST, textField_1);
 		sl_pnl.putConstraint(SpringLayout.SOUTH, lblNewLabel_1, 0, SpringLayout.SOUTH, textField_1);

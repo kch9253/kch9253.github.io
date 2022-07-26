@@ -56,7 +56,7 @@ class SignUp extends JDialog implements MouseListener {
 		btnNewButton.setContentAreaFilled(false); // 버튼 투명하게설정
 		btnNewButton.setFocusPainted(false);
 
-		textField = new JTextField("1번");
+		textField = new JTextField(); // 아이디 입력란 텍스트필드
 		sl_background.putConstraint(SpringLayout.NORTH, textField, 115, SpringLayout.NORTH, background);
 		sl_background.putConstraint(SpringLayout.NORTH, btnNewButton_1, 0, SpringLayout.NORTH, textField);
 		sl_background.putConstraint(SpringLayout.WEST, btnNewButton_1, 6, SpringLayout.EAST, textField);
@@ -66,7 +66,7 @@ class SignUp extends JDialog implements MouseListener {
 		background.add(textField);
 		textField.setColumns(10);
 
-		textField_1 = new JTextField("2번");
+		textField_1 = new JTextField(); // 이름 입력란 텍스트필드
 		sl_background.putConstraint(SpringLayout.NORTH, textField_1, 167, SpringLayout.NORTH, background);
 		sl_background.putConstraint(SpringLayout.SOUTH, textField_1, -272, SpringLayout.SOUTH, background);
 		sl_background.putConstraint(SpringLayout.SOUTH, textField, -20, SpringLayout.NORTH, textField_1);
