@@ -9,7 +9,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 
@@ -53,10 +55,25 @@ public class ManagerLogin extends JFrame implements MouseListener {
 		btnNewButton_1.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				Management dialog = new Management(ManagerLogin.this); // 관리자페이지 서브창 생성
-				dialog.show();
+				String id = textField_1.getText().trim();
+				String pw = textField.getText().trim();
+				
+				if (id.length()==0 || pw.length()==0) {
+					JOptionPane.showMessageDialog(null, "아이디 또는 비밀번호 입력하셔야됩니다" , "아이디나 비번을 입력해주세요",
+					JOptionPane.DEFAULT_OPTION);
+				}
+				else if (id.equals("6조") && pw.equals("0000")) {
+					JOptionPane.showMessageDialog(null, "로그인 성공" , "확인" , 
+					JOptionPane.DEFAULT_OPTION);
+					Management dialog = new Management(ManagerLogin.this); // 관리자페이지 서브창 생성
+					dialog.show();
+				} else {
+				JOptionPane.showConfirmDialog(null, "아이디 또는 비밀번호 확인해주세요" , "재입력" , 
+						JOptionPane.DEFAULT_OPTION);
+				}
 			}
 		});
+		
 		sl_pnl.putConstraint(SpringLayout.SOUTH, btnNewButton_1, -45, SpringLayout.SOUTH, pnl);
 		btnNewButton_1.setBorderPainted(false); // 버튼외곽선 없애줌
 		btnNewButton_1.setContentAreaFilled(false); // 버튼 투명하게설정
@@ -66,14 +83,14 @@ public class ManagerLogin extends JFrame implements MouseListener {
 		sl_pnl.putConstraint(SpringLayout.EAST, btnNewButton_1, -214, SpringLayout.EAST, pnl);
 		pnl.add(btnNewButton_1);
 		
-		textField_1 = new JTextField("1번");
+		textField_1 = new JTextField(); // 아이디 입력란 텍스트필드
 		sl_pnl.putConstraint(SpringLayout.NORTH, textField_1, 149, SpringLayout.NORTH, pnl);
 		sl_pnl.putConstraint(SpringLayout.WEST, textField_1, 0, SpringLayout.WEST, btnNewButton_1);
 		sl_pnl.putConstraint(SpringLayout.EAST, textField_1, 0, SpringLayout.EAST, btnNewButton);
 		pnl.add(textField_1);
 		textField_1.setColumns(10);
 		
-		textField = new JTextField("2번");
+		textField = new JPasswordField(); // 비밀번호 입력 텍스트필드
 		sl_pnl.putConstraint(SpringLayout.SOUTH, textField_1, -45, SpringLayout.NORTH, textField);
 		sl_pnl.putConstraint(SpringLayout.NORTH, btnNewButton_1, 21, SpringLayout.SOUTH, textField);
 		sl_pnl.putConstraint(SpringLayout.NORTH, textField, -144, SpringLayout.SOUTH, pnl);
@@ -94,7 +111,6 @@ public class ManagerLogin extends JFrame implements MouseListener {
 		sl_pnl.putConstraint(SpringLayout.WEST, lblNewLabel_1, 103, SpringLayout.WEST, pnl);
 		sl_pnl.putConstraint(SpringLayout.SOUTH, lblNewLabel_1, -6, SpringLayout.NORTH, textField);
 		pnl.add(lblNewLabel_1);
-		
 		
 		
 		

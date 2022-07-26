@@ -32,7 +32,6 @@ public class MenuJTabaleExam extends JDialog implements ActionListener {
 	private String fieldName;
 	
 	String[] name = { "UserKey" , "UserName" , "FavoriteGenre", "TotalPlays", "LastaccessDate" };
-	// TotalUsersFavoriteGenre = 회원들이 가장 즐겨듣는 장르 컬럼은 따로 구상해야함
 	
 	DefaultTableCellRenderer dtable = new DefaultTableCellRenderer(); // 텍스트 가운데 정렬하기위한 생성자
 	
@@ -106,13 +105,13 @@ public class MenuJTabaleExam extends JDialog implements ActionListener {
 		});
 		p.add(btnNewButton);
 		
-		JLabel lblNewLabel = new JLabel("Best Genre: ");
+		JLabel lblNewLabel = new JLabel("Best Genre: "); // 얘는 그냥 라벨 제목임
 		sl_p.putConstraint(SpringLayout.WEST, lblNewLabel, 10, SpringLayout.WEST, p);
 		lblNewLabel.setForeground(Color.white); // 폰트색상설정
 		lblNewLabel.setFont(lblNewLabel.getFont().deriveFont(13.0f)); // 폰트크기설정
 		p.add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("발라드말고뭐있냐");
+		JLabel lblNewLabel_1 = new JLabel("발라드말고뭐있냐"); // 얘한테 베스트장르 데이터값 집어넣어줘야함
 		sl_p.putConstraint(SpringLayout.NORTH, lblNewLabel, 0, SpringLayout.NORTH, lblNewLabel_1);
 		sl_p.putConstraint(SpringLayout.SOUTH, lblNewLabel, 0, SpringLayout.SOUTH, lblNewLabel_1);
 		sl_p.putConstraint(SpringLayout.EAST, lblNewLabel, -6, SpringLayout.WEST, lblNewLabel_1);

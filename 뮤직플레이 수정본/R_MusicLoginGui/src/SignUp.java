@@ -8,6 +8,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JScrollPane;
 import javax.swing.JButton;
 import javax.swing.SpringLayout;
@@ -74,7 +75,7 @@ class SignUp extends JDialog implements MouseListener {
 		background.add(textField_1);
 		textField_1.setColumns(10);
 
-		textField_2 = new JTextField("3번");
+		textField_2 = new JPasswordField(); // 비번입력
 		sl_background.putConstraint(SpringLayout.NORTH, textField_2, 21, SpringLayout.SOUTH, textField_1);
 		sl_background.putConstraint(SpringLayout.WEST, textField_2, 0, SpringLayout.WEST, textField);
 		sl_background.putConstraint(SpringLayout.SOUTH, textField_2, 53, SpringLayout.SOUTH, textField_1);
@@ -82,7 +83,7 @@ class SignUp extends JDialog implements MouseListener {
 		background.add(textField_2);
 		textField_2.setColumns(10);
 
-		textField_3 = new JTextField("4번");
+		textField_3 = new JPasswordField(); // 비번재입력
 		sl_background.putConstraint(SpringLayout.NORTH, btnNewButton, 36, SpringLayout.SOUTH, textField_3);
 		sl_background.putConstraint(SpringLayout.NORTH, textField_3, 19, SpringLayout.SOUTH, textField_2);
 		sl_background.putConstraint(SpringLayout.SOUTH, textField_3, 51, SpringLayout.SOUTH, textField_2);

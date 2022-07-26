@@ -56,7 +56,7 @@ public class Login extends JFrame implements MouseListener {
         background.add(button1);
         scrollPane = new JScrollPane(background);
         
-        textField = new JTextField("2번");
+        textField = new JPasswordField();
         sl_background.putConstraint(SpringLayout.NORTH, button, 17, SpringLayout.SOUTH, textField);
         sl_background.putConstraint(SpringLayout.SOUTH, textField, -151, SpringLayout.SOUTH, background);
         sl_background.putConstraint(SpringLayout.NORTH, textField, 261, SpringLayout.NORTH, background);
