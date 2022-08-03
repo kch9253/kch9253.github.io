@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>태그연습하기</title>
+    <style>
+        header {
+            background-color: black;
+            border: 1px solid red;
+        }
+
+        /* header > h1 */
+        /* header h1  */
+        #white-heading {
+            color: #fff;
+            text-align: center;
+        }
+
+        .red-heading {
+            
+            color: rebeccapurple;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        main {
+            flex: 3;
+        }
+
+        aside {
+            flex: 1;
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 주석처리 -->
+    <header>
+        <div>
+            <h1 id="white-heading" class="asdf">헤더영역</h1>
+            <h1 class="red-heading asdf">헤더2</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="first.html">첫번째</a></li>
+            <li><a href="second.html">두번째</a></li>
+            <li><a href="inner/third.html">세번째</a></li>
+            <li><a href="inputtest.html">입력연습</a></li>
+        </ul>
+        <!-- <ol>
+                <li>아이템</li>
+                <li>아이템</li>
+                <li>아이템</li>
+            </ol> -->
+    </nav>
+    <div class="container">
+        <main>
+            <h1 class="red-heading">메인영역</h1>
+            <article>
+                <h2>글 내용 요약제목</h2>
+                <p>Lorem, ipsum.</p>
+            </article>
+        </main>
+        <aside>사이드영역</aside>
+    </div>
+
+    <footer>밑영역</footer>
+
+</body>
+
+</html>
