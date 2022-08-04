@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+</head>
+<body>
+    <p>방가</p>
+</body>
+<script>
+    function params() {
+        let sum = 0;
+        for (let i = 0; i < arguments.length; i++) {
+            sum += (arguments[i]);
+        }
+        console.log(sum);
+    }
+    params(1,2,3,4,5,6,7,8,9);
+
+    function testDefault(a = 10) {
+        console.log(a);
+    }
+    testDefault(100);
+    testDefault();
+
+    // let myFunc = function (a,b) {
+    //     console.log(a + b);
+    // } 
+    // myFunc(10,15);
+
+    // hello("둘리");
+    // function hello(name) {
+    //     console.log(name + "님 안녕");
+    // }
+    // hello(0);
+</script>
+</html>

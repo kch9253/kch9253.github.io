@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+</head>
+<body>
+    <button id="mybtn">눌러봐</button>
+    <input id="mytext" value="test 값">
+    <button id="printbtn">콘솔출력하기</button>
+</body>
+<script>
+    function myListner(e) {
+        alert("ㅎㅇ");
+        console.log(e);
+    }
+
+
+    // mybtn.onclick = myListner;
+    let elem = document.getElementById("mybtn");
+    elem.addEventListener("click" , myListner);
+
+    let printbtn = document.getElementById("printbtn");
+    let inputText = document.getElementById("mytext");
+    
+    printbtn.addEventListener("mousedown" , function (e) {
+        console.log(inputText.value);
+    });
+</script>
+</html>
