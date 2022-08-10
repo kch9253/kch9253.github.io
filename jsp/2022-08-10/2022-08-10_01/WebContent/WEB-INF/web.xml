@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>2022-08-10_01</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>FirstServlet</servlet-name> 
+  	<servlet-class>kr.co.greenart.CountryServlet</servlet-class>
+  </servlet>
+  <!-- 서블릿 네임은 아무렇게나 정해줘도됨 -->
+  <servlet-mapping>
+  	<servlet-name>FirstServlet</servlet-name>
+  	<url-pattern>/test</url-pattern>
+  <!-- 해당 xml 페이지를 호출하기위해 프로젝트명 뒤에 /test 를 붙여 호출함. test는 그냥 임의로 지은이름 -->
+  <!-- 예를들어 http://localhost:8080/2022-08-10_01/test -->
+  </servlet-mapping>
+</web-app>
