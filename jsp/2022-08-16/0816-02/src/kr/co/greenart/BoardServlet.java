@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,6 +19,13 @@ import org.slf4j.LoggerFactory;
 public class BoardServlet extends HttpServlet {
 	private final static Logger logger = LoggerFactory.getLogger(BoardServlet.class);
 	
+	private BoardService service;
+	
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		service = new BoardService(new BoardDAO());
+	}
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //		System.out.println("사용자가 GET방식의 요청을 하였습니다. (게시판 목록)");
@@ -25,7 +33,7 @@ public class BoardServlet extends HttpServlet {
 		logger.info("사용자가 Get 요청함. (게시판 목록)");
 		// slf4j - FATAL / ERROR / WARN / INFO / DEBUG
 		
-		List<String> articles = new ArrayList<>(Arrays.asList("글1", "글2", "글3"));
+		List<BoardArticle> articles = service.게시글목록보기서비스();
 		req.setAttribute("articles", articles);
 		
 		req.getRequestDispatcher("/WEB-INF/articles.jsp").forward(req, resp);
