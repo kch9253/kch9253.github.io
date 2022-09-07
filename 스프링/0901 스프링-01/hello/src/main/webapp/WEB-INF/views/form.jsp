@@ -4,9 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>덧셈 결과</title>
+<title>print form</title>
 </head>
 <body>
-	<p>${ result }</p>
+	<form method="post">
+		<input type="text" name="text"/>
+		<input type="submit"/>
+	</form>
 </body>
 </html>

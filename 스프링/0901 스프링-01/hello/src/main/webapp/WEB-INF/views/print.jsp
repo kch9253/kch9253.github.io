@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>덧셈 결과</title>
+<title>입력값 그대로 출력</title>
 </head>
 <body>
-	<p>${ result }</p>
+	<p>${ text }</p>
 </body>
 </html>

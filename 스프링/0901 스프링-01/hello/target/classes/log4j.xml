@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="kr.co.greentart">
+	<logger name="kr.co.greenart">
 		<level value="info" />
 	</logger>
 	
